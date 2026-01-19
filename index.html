@@ -40,17 +40,18 @@
                         <div class="phone-screen">
                             <div class="app-preview">
                                 <div class="preview-header">Baby Kick Tracker</div>
-                                <div class="kick-button">
+                                <div class="kick-button" id="kickButton" onclick="logKick()">
                                     <span class="footprint">👣</span>
+                                    <div class="ripple" id="ripple"></div>
                                 </div>
-                                <div class="preview-text">Tap to log kick</div>
+                                <div class="preview-text" id="feedbackText">Tap to log kick</div>
                                 <div class="stats-preview">
                                     <div class="stat-item">
-                                        <span class="stat-num">24</span>
+                                        <span class="stat-num" id="todayCount">12</span>
                                         <span class="stat-label">Today</span>
                                     </div>
                                     <div class="stat-item">
-                                        <span class="stat-num">156</span>
+                                        <span class="stat-num" id="totalCount">156</span>
                                         <span class="stat-label">Total</span>
                                     </div>
                                 </div>
@@ -123,5 +124,45 @@
             </div>
         </div>
     </footer>
+    <script>
+        let todayKicks = 12;
+        let totalKicks = 156;
+
+        function logKick() {
+            todayKicks++;
+            totalKicks++;
+
+            document.getElementById('todayCount').textContent = todayKicks;
+            document.getElementById('totalCount').textContent = totalKicks;
+
+            // Button animation
+            const button = document.getElementById('kickButton');
+            button.classList.add('kick-active');
+            setTimeout(() => button.classList.remove('kick-active'), 150);
+
+            // Ripple effect
+            const ripple = document.getElementById('ripple');
+            ripple.classList.remove('ripple-animate');
+            void ripple.offsetWidth;
+            ripple.classList.add('ripple-animate');
+
+            // Feedback text
+            const feedback = document.getElementById('feedbackText');
+            feedback.textContent = 'Kick recorded 💗';
+            feedback.classList.add('feedback-pop');
+            setTimeout(() => {
+                feedback.classList.remove('feedback-pop');
+                feedback.textContent = 'Tap to log kick';
+            }, 1000);
+
+            // Number pop animation
+            document.getElementById('todayCount').classList.add('number-pop');
+            document.getElementById('totalCount').classList.add('number-pop');
+            setTimeout(() => {
+                document.getElementById('todayCount').classList.remove('number-pop');
+                document.getElementById('totalCount').classList.remove('number-pop');
+            }, 200);
+        }
+    </script>
 </body>
 </html>
