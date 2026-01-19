@@ -164,13 +164,9 @@ body {
     box-shadow: 0 8px 24px rgba(255, 181, 209, 0.4);
     margin-bottom: 16px;
     cursor: pointer;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
     position: relative;
     overflow: hidden;
     user-select: none;
-}
-
-.kick-button {
     animation: pulse-hint 2s ease-in-out infinite;
 }
 
@@ -178,6 +174,7 @@ body {
     transform: scale(1.05);
     box-shadow: 0 12px 32px rgba(255, 181, 209, 0.5);
     animation: none;
+    cursor: pointer;
 }
 
 @keyframes pulse-hint {
