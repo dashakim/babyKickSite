@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFECF2"/>
+      <stop offset="100%" stop-color="#F2EDFE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative blobs -->
+  <circle cx="80" cy="80" r="140" fill="#FFB5D1" opacity="0.3"/>
+  <circle cx="1120" cy="560" r="160" fill="#D1C2FA" opacity="0.3"/>
+  <circle cx="1080" cy="70" r="90" fill="#A4E8CC" opacity="0.25"/>
+  <circle cx="120" cy="570" r="110" fill="#FFD9C7" opacity="0.3"/>
+
+  <!-- Footprint -->
+  <text x="600" y="240" text-anchor="middle" font-size="130" font-family="Apple Color Emoji, Segoe UI Emoji, sans-serif">👣</text>
+
+  <!-- App name -->
+  <text x="600" y="360" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="bold" fill="#322C38" letter-spacing="-1">Baby Kick Tracker</text>
+
+  <!-- Tagline -->
+  <text x="600" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#8D86A3">Track your baby's movements with love</text>
+
+  <!-- App Store pill -->
+  <rect x="460" y="460" width="280" height="58" rx="29" fill="#322C38"/>
+  <text x="600" y="497" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#ffffff">Free on the App Store</text>
+</svg>
