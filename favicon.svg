@@ -1,4 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#FFB5D1"/>
-  <text x="16" y="24" text-anchor="middle" font-size="20">👣</text>
+  <!-- Pink rounded background -->
+  <rect width="32" height="32" rx="7" fill="#FFB5D1"/>
+
+  <!-- Footprint: sole -->
+  <ellipse cx="17.5" cy="22" rx="5.5" ry="7.5" fill="white" transform="rotate(-12 17.5 22)"/>
+
+  <!-- Footprint: toes (big to small) -->
+  <ellipse cx="9.5"  cy="14"   rx="2.2" ry="2.8" fill="white" transform="rotate(-12 9.5  14)"/>
+  <ellipse cx="13"   cy="10.5" rx="2.0" ry="2.6" fill="white" transform="rotate(-12 13   10.5)"/>
+  <ellipse cx="16.8" cy="9.2"  rx="1.8" ry="2.4" fill="white" transform="rotate(-12 16.8 9.2)"/>
+  <ellipse cx="20.4" cy="10"   rx="1.6" ry="2.2" fill="white" transform="rotate(-12 20.4 10)"/>
+  <ellipse cx="23.2" cy="12.8" rx="1.4" ry="2.0" fill="white" transform="rotate(-12 23.2 12.8)"/>
 </svg>
